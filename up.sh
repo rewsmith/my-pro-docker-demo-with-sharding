@@ -129,7 +129,8 @@ createApiResponse=$(curl -s --location 'http://localhost:3000/api/apis' \
       },
       "enable_ip_whitelisting": true,
       "active": true,
-      "enable_batch_request_support": true
+      "enable_batch_request_support": true,
+      "tags": ["all"]
   }
 }')
 apiId=$(echo "$createApiResponse" | awk -F'"' '/"ID":/{print $(NF-1)}')
@@ -204,7 +205,8 @@ Please sign in at http://localhost:3000
 user: dev@tyk.io
 pw: topsecret
 
-Your Tyk Gateway is found at http://localhost:8080
+Tyk Gateway 1 is found at http://localhost:8080
+Tyk Gateway 2 is found at http://localhost:8081
 
 Press Enter to exit'
 
