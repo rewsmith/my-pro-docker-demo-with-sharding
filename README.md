@@ -8,7 +8,7 @@
 
 Once you have a license, Run these commands:
 
-1. `git clone https://github.com/TykTechnologies/tyk-pro-docker-demo && cd tyk-pro-docker-demo`
+1. `git clone https://github.com/rewsmith/my-pro-docker-demo-with-sharding.git && cd my-pro-docker-demo-with-sharding`
 
 2. For a bootstrapped install, run `up.sh`
 OR
